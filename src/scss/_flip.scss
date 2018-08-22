@@ -1,0 +1,38 @@
+@mixin rotate{
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+}
+
+.cardCon{
+    -webkit-perspective:500;
+    -moz-perspective:500;
+}
+.flipCon{
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    float:left;
+}
+.cardCon:hover .flipCon{
+    @include rotate;
+}
+.face{
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    width: 200px;
+    height: 276px;
+}
+.front{
+    background-size: 100% 100%;
+}
+.back{
+    position: absolute;
+    top: 0;
+    background: #000000;
+    background-size: 100% 100%;
+    text-align: center;
+    color: white;
+    line-height: 276px;
+    @include rotate;
+}
