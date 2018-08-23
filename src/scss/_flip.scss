@@ -6,6 +6,8 @@
 .cardCon{
     -webkit-perspective:500;
     -moz-perspective:500;
+    width: 200px;
+    height: 300px;
 }
 .flipCon{
     -webkit-transform-style: preserve-3d;

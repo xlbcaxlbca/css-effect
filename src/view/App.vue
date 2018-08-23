@@ -7,6 +7,15 @@
                 <div class="face back">这是背面</div>
             </div>
         </div>
+        <div class="musicCon">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
     </div>
 </template>
 <script>
@@ -15,7 +24,6 @@
             return {}
         },
         mounted() {
-
         },
         methods:{
         }
@@ -23,4 +31,5 @@
 </script>
 <style lang="scss" scoped>
     @import "../scss/_flip.scss";
+    @import "../scss/_music.scss";
 </style>
