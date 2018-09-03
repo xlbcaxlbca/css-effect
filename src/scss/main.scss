@@ -1,2 +1,20 @@
 @import "../scss/_global.scss";
 @import "../scss/_reset.scss";
+
+.iconCon{
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid burlywood;
+    i{
+        font-size: 50px;
+        margin: 20px 0;
+        cursor: pointer;
+    }
+    i:hover{
+        background-color: gray;
+    }
+}

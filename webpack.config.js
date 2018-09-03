@@ -5,7 +5,8 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
     entry: {
-        index: "./src/index.js"
+        index: "./src/index.js",
+        iconfont: "./src/assets/iconfont/iconfont.css",
     },
     output:{
         filename: "[name].[hash:6].js",
@@ -86,7 +87,8 @@ module.exports = {
     devServer:{
         contentBase: path.resolve(__dirname, "dist"),
         inline: true,
-        hot: true
+        hot: true,
+        port: 8090
     },
     resolve:{
         modules:["node_modules"],
