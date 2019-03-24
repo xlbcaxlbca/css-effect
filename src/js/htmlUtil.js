@@ -1,11 +1,4 @@
 
-var p = document.getElementById("test");
-
-// var s = document.createElement("script");
-// s.innerHTML = "alert('bbb')";
-// p.appendChild(s);
-
-
 function htmlEncode(html){
     var temp = document.createElement("div");
     temp.textContent = html;
@@ -14,5 +7,7 @@ function htmlEncode(html){
     return output;
 }
 
-var text = "<script>alert('aaa')</script>";
-p.innerHTML = htmlEncode(text);
+
+export {
+    htmlEncode
+}

@@ -17,6 +17,7 @@
             <i></i>
         </div>
         <div>这是时间：{{time}}</div>
+        <div class="triangle"></div>
         <div class="iconCon">
             <i class="iconfont icon-shouji1"></i>
             <i class="iconfont icon-saoma"></i>
