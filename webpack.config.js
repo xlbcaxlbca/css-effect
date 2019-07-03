@@ -71,7 +71,7 @@ module.exports = {
                 test: /\.vue$/,
                 use: ["vue-loader"]
             }
-        ]     
+        ]       
     },
     plugins: [
         //删除文件------npm run build才会在dist中反应出来，devServer模式不会。 
